@@ -6,3 +6,24 @@ body {
     padding-bottom: 65px;
     color: #666666;
 }
+.boton{
+    transition: all .2s ease-in-out;
+}
+.boton:hover
+{
+    transform: scale(1.05);
+}
+.menu {
+    transition: all .2s ease-in-out;
+}
+.menu:hover{
+    -webkit-filter: drop-shadow(5px 5px 5px #FFFFFFAA);
+  filter: drop-shadow(5px 5px 5px #FFFFFFAA);
+}.menu-inactivo {
+    transition: all .2s ease-in-out;
+}
+.menu-inactivo:hover{
+    -webkit-filter: drop-shadow(5px 5px 5px #153723AA);
+  filter: drop-shadow(5px 5px 5px #153723AA);
+}
+
