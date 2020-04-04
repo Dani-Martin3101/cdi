@@ -1,10 +1,12 @@
 html {
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 body { 
-    padding-top: 65px; 
-    padding-bottom: 65px;
+    padding-top: 70px; 
+    padding-bottom: 80px;
     color: #666666;
+    height: 100%;
 }
 .boton{
     transition: all .2s ease-in-out;
@@ -25,5 +27,14 @@ body {
 .menu-inactivo:hover{
     -webkit-filter: drop-shadow(5px 5px 5px #153723AA);
   filter: drop-shadow(5px 5px 5px #153723AA);
+}
+.fondo{
+    background-image: url(imagenes/fondo.svg);
+    background-repeat: repeat-x;
+    background-size: 10rem;
+    background-position: left bottom;
+}
+main{
+    min-height: 85vh;
 }
 
