@@ -3,8 +3,8 @@ html {
     height: 100%;
 }
 body { 
-    padding-top: 70px; 
-    padding-bottom: 80px;
+    padding-top: 4rem; 
+    padding-bottom: 4.5rem;
     color: #666666;
     height: 100%;
 }
@@ -35,6 +35,7 @@ body {
     background-position: left bottom;
 }
 main{
-    min-height: 85vh;
+    height: 100%;
 }
+
 
