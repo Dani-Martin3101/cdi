@@ -1,12 +1,15 @@
 html {
     font-family: 'Roboto', sans-serif;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 body { 
     padding-top: 4rem; 
     padding-bottom: 4.5rem;
     color: #666666;
     height: 100%;
+    margin:0;
 }
 .boton{
     transition: all .2s ease-in-out;
@@ -36,6 +39,7 @@ body {
 }
 main{
     height: 100%;
+    overflow: auto;
 }
 
 
