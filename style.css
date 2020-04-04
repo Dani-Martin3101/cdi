@@ -41,5 +41,38 @@ main{
     height: 100%;
     overflow: auto;
 }
+a{
+    color:#666666;
+    text-decoration: none;
+}
 
+a:active{
+    color:#666666;
+    text-decoration: none;
+}
+a:hover{
+    color:#666666;
+    text-decoration: none;
+}
+a:visited{
+    color:#666666;
+    text-decoration: none;
+}
+.link{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.link:active{
+    color:#ffffff;
+    text-decoration: none;
+}
+.link:hover{
+    color:#ffffff;
+    text-decoration: none;
+}
+.link:visited{
+    color:#ffffff;
+    text-decoration: none;
+}
 
