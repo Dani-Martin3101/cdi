@@ -75,6 +75,23 @@ a:visited{
     color:#ffffff;
     text-decoration: none;
 }
+.link-inactivo{
+    color:#153723;
+    text-decoration: none;
+}
+
+.link-inactivo:active{
+    color:#153723;
+    text-decoration: none;
+}
+.link-inactivo:hover{
+    color:#153723;
+    text-decoration: none;
+}
+.link-inactivo:visited{
+    color:#153723;
+    text-decoration: none;
+}
 p{
     color:#666666;
     font-size: 1rem;    
