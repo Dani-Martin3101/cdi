@@ -31,7 +31,7 @@
                 -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);
                 box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);">
                 <h3>
-                    Modificar animal
+                    Añadir animal
                 </h3>
             </div>
             <div class="mt-2">
@@ -44,11 +44,11 @@
                             <div class="pb-2">
                                 <p style="color: #663300"><b>Imagen:</b></p>
                                 <div class="text-center m-3">
-                                    <img class="w-75" src="imagenes/oveja1.jpg">
+                                    <img class="w-50" src="imagenes/imagen%20gris.svg">
                                 </div>
                                 <div class="text-center">
                                     <input type="file" name="file" id="file" class="inputfile" />
-<label class="btn boton" for="file">Cambiar imagen</label>
+                                    <label class="btn boton" for="file">Elegir imagen</label>
                                 </div>
                             </div>
                         </div>
@@ -58,23 +58,24 @@
                                     <div class="form-group row m-1">
                                         <label for="nombre" class="col-md-auto col-form-label" style="color: #663300"><b>Nombre:</b></label>
                                         <div class="col-md">
-                                            <input class="form-control" id="nombre" style="background-color: #cccccc;" value="María">
+                                            <input class="form-control" id="nombre" style="background-color: #cccccc;" placeholder="Este campo es obligatorio">
                                         </div>
                                     </div>
                                     <div class="form-group row m-1">
                                         <label for="ID" class="col-md-auto col-form-label" style="color: #663300"><b>Número Id:</b></label>
                                         <div class="col-md">
-                                            <input class="form-control" id="ID" style="background-color: #e6e6e6;" value="XC2">
+                                            <input class="form-control" id="ID" style="background-color: #e6e6e6;" placeholder="Este campo es obligatorio">
                                         </div>
                                     </div>
                                     <div class="form-group row m-1">
                                         <label for="nombre" class="col-sm-auto col-form-label" style="color: #663300"><b>Estado:</b></label>
                                         <div class="col-md">
                                             <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" style="background-color: #cccccc">
-                                                <option selected>Adulto</option>
+                                                <option selected disabled hidden>Elige una opción</option>
                                                 <option value="1">Gestante</option>
                                                 <option value="2">Lactante</option>
                                                 <option value="3">Joven</option>
+                                                <option value="4">Adulto</option>
                                             </select>
                                         </div>
                                     </div>
@@ -82,30 +83,32 @@
                                         <label for="nombre" class="col-sm-auto col-form-label" style="color: #663300"><b>Salud:</b></label>
                                         <div class="col-md">
                                             <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" style="background-color: #e6e6e6">
-                                                <option selected>Sana</option>
-                                                <option value="1">Enferma</option>
+                                                <option selected disabled hidden>Elige una opción</option>
+                                                <option value="1">Sana</option>
+                                                <option value="2">Enferma</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="form-group row m-1">
                                         <label for="nombre" class="col-sm-auto col-form-label" style="color: #663300"><b>Fecha de Nacimiento:</b></label>
                                         <div class="col-md">
-                                            <input class="form-control" id="nombre" style="background-color: #cccccc;" value="2000-02-22" type="date">
+                                            <input class="form-control" id="nombre" style="background-color: #cccccc;" type="date">
                                         </div>
                                     </div>
                                     <div class="form-group row m-1">
                                         <label for="nombre" class="col-sm-auto col-form-label" style="color: #663300"><b>Sexo:</b></label>
                                         <div class="col-md">
                                             <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" style="background-color: #e6e6e6">
-                                                <option selected>Hembra</option>
+                                                <option selected disabled hidden>Elije una opción</option>
                                                 <option value="1">Macho</option>
+                                                <option value="2">Hembra</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="form-group row m-1">
                                         <label for="nombre" class="col-sm-auto col-form-label" style="color: #663300"><b>Raza:</b></label>
                                         <div class="col-md">
-                                            <input class="form-control" id="nombre" style="background-color: #cccccc;" value="SC">
+                                            <input class="form-control" id="nombre" style="background-color: #cccccc;">
                                         </div>
                                     </div>
                                 </div>
@@ -120,7 +123,7 @@
                                     <figcaption>Aceptar</figcaption>
                                 </figure>
                             </a>
-                            <a class="col-3 text-center" href="oveja-maria.html">
+                            <a class="col-3 text-center" href="listaovejas.html">
                                 <figure class="boton">
                                     <img src="imagenes/cerrar.svg" style="width:50px;">
                                     <figcaption>Rechazar</figcaption>
