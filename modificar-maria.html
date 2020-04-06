@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="utf-8">
+    <title>Inicio Gestión</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: #FFF2CC">
+    <header>
+        <nav class="navbar fixed-top navbar-dark" style="background-color: #008F39">
+            <a class="navbar-brand boton" href="inicio-gestion.html">APP GANADERÍA</a>
+            <a class="navbar-brand boton" href="notificaciones.html">
+                <img src="imagenes/notificacion%20blanco%20rojo.svg" style="width: 1.6rem">
+            </a>
+        </nav>
+    </header>
+    <main class="fondo m-0 p-0">
+        <div class="container pb-3">
+            <div class="rounded pt-1" style="
+                background-color: #663300;
+                text-align: center;
+                color: white;
+                -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);
+                -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);">
+                <h3>
+                    Modificar animal
+                </h3>
+            </div>
+            <div class="mt-2">
+                <div class="container bg-white" style="
+                -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);
+                -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);">
+                    <div class="row pt-2">
+                        <div class="col-md-6">
+                            <div class="pb-2">
+                                <p style="color: #663300"><b>Imagen:</b></p>
+                                <div class="text-center m-3">
+                                    <img class="w-75" src="imagenes/oveja1.jpg">
+                                </div>
+                                <div class="text-center">
+                                    <a class="btn boton mx-1" style="background-color:#6d8764; color: white">Cambiar imagen</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group">
+                                    <div class="form-group row m-1">
+                                        <label for="nombre" class="col-md-auto col-form-label" style="color: #663300"><b>Nombre:</b></label>
+                                        <div class="col-md">
+                                            <input class="form-control" id="nombre" style="background-color: #cccccc;" value="María">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row m-1">
+                                        <label for="ID" class="col-md-auto col-form-label" style="color: #663300"><b>Número Id:</b></label>
+                                        <div class="col-md">
+                                            <input class="form-control" id="ID" style="background-color: #e6e6e6;" value="XC2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row m-1">
+                                        <label for="nombre" class="col-sm-auto col-form-label" style="color: #663300"><b>Estado:</b></label>
+                                        <div class="col-md">
+                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" style="background-color: #cccccc">
+                                                <option selected>Adulto</option>
+                                                <option value="1">Gestante</option>
+                                                <option value="2">Lactante</option>
+                                                <option value="3">Joven</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row m-1">
+                                        <label for="nombre" class="col-sm-auto col-form-label" style="color: #663300"><b>Salud:</b></label>
+                                        <div class="col-md">
+                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" style="background-color: #e6e6e6">
+                                                <option selected>Sana</option>
+                                                <option value="1">Enferma</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row m-1">
+                                        <label for="nombre" class="col-sm-auto col-form-label" style="color: #663300"><b>Fecha de Nacimiento:</b></label>
+                                        <div class="col-md">
+                                            <input class="form-control" id="nombre" style="background-color: #cccccc;" value="2000-02-22" type="date">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row m-1">
+                                        <label for="nombre" class="col-sm-auto col-form-label" style="color: #663300"><b>Sexo:</b></label>
+                                        <div class="col-md">
+                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" style="background-color: #e6e6e6">
+                                                <option selected>Hembra</option>
+                                                <option value="1">Macho</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row m-1">
+                                        <label for="nombre" class="col-sm-auto col-form-label" style="color: #663300"><b>Raza:</b></label>
+                                        <div class="col-md">
+                                            <input class="form-control" id="nombre" style="background-color: #cccccc;" value="SC">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <a class="col-3 text-center" href="oveja-maria.html">
+                                <figure class="boton">
+                                    <img src="imagenes/comprobar.svg" style="width:50px;">
+                                    <figcaption>Aceptar</figcaption>
+                                </figure>
+                            </a>
+                            <a class="col-3 text-center" href="oveja-maria.html">
+                                <figure class="boton">
+                                    <img src="imagenes/cerrar.svg" style="width:50px;">
+                                    <figcaption>Rechazar</figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid mb-0 fixed-bottom">
+        <div class="row">
+
+            <div class="col-6 h5 m-0 pb-2 pt-2 pl-2 pr-0 text-center" style="background-color: #008F39; color: white;">
+                <a class="link" href="inicio-gestion.html">
+                    <div class="border-white border-right menu">
+                        <img src="imagenes/gestion%20animales.svg" style="width:  3rem">
+                        <br>
+                        <p class="link p-0 m-0">
+                            Gestión
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-6 h5 m-0 pb-2 pt-2 pl-1 pr-2 text-center" style="background-color: #008F39; color: white;">
+                <a href="inicio-seguridad.html">
+                    <div class="border-white border-left menu-inactivo" style=" padding-left: 5px; color:#153723">
+                        <img src="imagenes/seguridad.svg" style="width:  3rem">
+                        <br>
+                        <p class="link-inactivo p-0 m-0">
+                            Seguridad
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body></html>
