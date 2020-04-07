@@ -42,7 +42,7 @@
                 color: white;
                 -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);
                 -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);
-                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);" >
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);">
                         <div class="my-auto">
                             <img class="w-100" src="imagenes/oveja1.jpg">
                         </div>
@@ -92,7 +92,9 @@
                         </ul>
                         <div class="text-center">
                             <a class="btn boton mx-1" style="background-color:#6d8764; color: white" href="modificar-maria.html">Modificar</a>
-                            <a class="btn boton mx-1" style="background-color:#ff9933; color: white">Eliminar</a>
+                            <button type="button" class="btn boton mx-1" data-toggle="modal" data-target="#exampleModalCenter" style="background-color:#ff9933; color: white">
+                                Eliminar
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -129,7 +131,43 @@
 
         </div>
     </footer>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h2>Motivo de la eliminación</h2>
+                </div>
+                <div class="list-group px-3" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Muerte</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Venta</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Otros</a>
+                </div>
+                <div class="modal-footer border-top-0 mx-auto">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirmacion">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="confirmacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h2 style="color:red">¿ESTÁ SEGURO DE DARLO DE BAJA?</h2>
+                </div>
+                <div class="text-center">
+                    <img class="w-50" src="imagenes/error.svg">
+                </div>
+                <div class="modal-footer border-top-0 mx-auto">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body></html>
+</body>
+
+</html>
