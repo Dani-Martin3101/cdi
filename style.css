@@ -122,3 +122,14 @@ input{
 .inputfile + label {
 	cursor: pointer; /* "hand" cursor */
 }
+table {
+    width: 100%;
+}
+.tabla{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+caption{
+    background-color: #663300;
+    color:white;
+}

@@ -23,7 +23,7 @@
     </header>
     <main class="fondo m-0 p-0">
         <div class="container pb-3">
-            <div class="rounded pt-1 " style="
+            <div class="rounded pt-1" style="
                 background-color: #663300;
                 text-align: center;
                 color: white;
@@ -31,7 +31,7 @@
                 -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);
                 box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);">
                 <h3>
-                    María
+                    Calendario de citas
                 </h3>
             </div>
             <div class="row mt-2">
@@ -44,14 +44,65 @@
                 -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);
                 box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);">
                         <div class="my-auto">
-                            <img class="w-100" src="imagenes/oveja1.jpg">
-                        </div>
-                        <div class="mt-2 ml-2" style="color: #666666; text-align: left;">
-                            <ul>
-                                <li><b style="color:#444444">Nombre:</b> María</li>
-                                <li><b style="color:#444444">Identificador:</b> XC2</li>
-                                <li><b style="color:#444444">Tipo animal:</b> Oveja</li>
-                            </ul>
+                            <table class="tabla" style="color:#444444; border: 1px solid black">
+                                <caption style="caption-side: top; text-align: center; padding: 2px">
+                                    <h4>Abril</h4>
+                                </caption>
+                                <tr class="tabla">
+                                    <td><b>L</b></td>
+                                    <td><b>M</b></td>
+                                    <td><b>X</b></td>
+                                    <td><b>J</b></td>
+                                    <td><b>V</b></td>
+                                    <td><b>S</b></td>
+                                    <td><b>D</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="tabla"></td>
+                                    <td class="tabla"></td>
+                                    <td class="tabla">1</td>
+                                    <td class="tabla">2</td>
+                                    <td class="tabla">3</td>
+                                    <td class="tabla">4</td>
+                                    <td class="tabla">5</td>
+                                </tr>
+                                <tr>
+                                    <td class="tabla">6</td>
+                                    <td class="tabla">7</td>
+                                    <td class="tabla">8</td>
+                                    <td class="tabla">9</td>
+                                    <td class="tabla">10</td>
+                                    <td class="tabla">11</td>
+                                    <td class="tabla">12</td>
+                                </tr>
+                                <tr>
+                                    <td class="tabla">13</td>
+                                    <td class="tabla">14</td>
+                                    <td style="color:white; background-color: #663300" class="tabla">15</td>
+                                    <td class="tabla">16</td>
+                                    <td class="tabla">17</td>
+                                    <td class="tabla">18</td>
+                                    <td class="tabla">19</td>
+                                </tr>
+                                <tr>
+                                    <td class="tabla">20</td>
+                                    <td class="tabla">21</td>
+                                    <td class="tabla">22</td>
+                                    <td class="tabla">23</td>
+                                    <td class="tabla">24</td>
+                                    <td class="tabla">25</td>
+                                    <td class="tabla">26</td>
+                                </tr>
+                                <tr>
+                                    <td class="tabla">27</td>
+                                    <td class="tabla">28</td>
+                                    <td class="tabla">29</td>
+                                    <td class="tabla">30</td>
+                                    <td class="tabla">31</td>
+                                    <td class="tabla"></td>
+                                    <td class="tabla"></td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -61,26 +112,41 @@
                 -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);
                 -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);
                 box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);">
-                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <thead style="background-color:#663300;color:white; ">
-                                    <tr>
-                                        <th scope="col">Cantidad</th>
-                                        <th scope="col">Motivo</th>
-                                        <th scope="col">Tipo</th>
-                                        <th scope="col">Número</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>10 ml</td>
-                                        <td>Tuberculosis</td>
-                                        <td>Básica</td>
-                                        <td>1</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="rounded pt-1" style="
+                        background-color: #663300;
+                        color: white;
+                        text-align: center;
+                        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);
+                        -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);
+                        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);">
+                            <h4 style="padding-bottom:  6px">
+                                Lista de próximas citas
+                            </h4>
                         </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Numero ID</th>
+                                    <th scope="col">Motivo</th>
+                                    <th scope="col">Fecha</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>María</td>
+                                    <td>XC2</td>
+                                    <td>Vacuna para la Gripe</td>
+                                    <td>15/04/2020</td>
+                                </tr>
+                                <tr>
+                                    <td>María</td>
+                                    <td>XC2</td>
+                                    <td>Vacuna para la Tuberculosis</td>
+                                    <td>15/04/2020</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -183,4 +249,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body></html>
+</body>
+
+</html>
