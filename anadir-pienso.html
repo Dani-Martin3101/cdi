@@ -31,7 +31,7 @@
                 -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);
                 box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);">
                 <h3>
-                    Modificar animal
+                    Añadir pienso
                 </h3>
             </div>
             <div class="mt-2">
@@ -39,77 +39,59 @@
                 -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);
                 -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);
                 box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.43);">
-                    <div class="row pt-2">
-                        <div class="col-md-6">
-                            <div class="pb-2">
-                                <p style="color: #663300"><b>Imagen:</b></p>
-                                <div class="text-center m-3">
-                                    <img class="w-75" src="imagenes/oveja1.jpg">
+                    <div class="row p-5 h-100">
+                        <div class="col-md-6 my-auto">
+                            <div class="row h-100">
+                                <div class="col-6 my-auto">
+                                    <div class="mb-2 p-1" style="background-color:#994c00; color: white; text-align: center; border-radius: 2px;">Tipo</div>
+                                    <div class="list-group list-group-mine" id="list-tab" role="tablist">
+                                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Compuesto</a>
+                                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Completo</a>
+                                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Complementario</a>
+                                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Ecológico</a>
+                                    </div>
                                 </div>
-                                <div class="text-center">
-                                    <input type="file" name="file" id="file" class="inputfile" />
-                                    <label class="btn boton" for="file">Cambiar imagen</label>
+                                <div class="col-6 my-auto">
+                                    <div class="mb-2 p-1" style="background-color:#994c00; color: white; text-align: center; border-radius: 2px;">Familia</div>
+                                    <div class="list-group">
+                                        <input type="checkbox" name="CheckBoxInputName" value="Value1" id="CheckBox1" checked />
+                                        <label class="list-group-item list-group-item-action m-0" for="CheckBox1">Cerdos</label>
+                                        <input type="checkbox" name="CheckBoxInputName" value="Value2" id="CheckBox2" />
+                                        <label class="list-group-item list-group-item-action m-0" for="CheckBox2">Vacas</label>
+                                        <input type="checkbox" name="CheckBoxInputName" value="Value3" id="CheckBox3" />
+                                        <label class="list-group-item m-0" for="CheckBox3">Cabras</label>
+                                        <input type="checkbox" name="CheckBoxInputName" value="Value4" id="CheckBox4" />
+                                        <label class="list-group-item" for="CheckBox4">Ovejas</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <form>
-                                <div class="form-group">
-                                    <div class="form-group row m-1">
-                                        <label for="nombre" class="col-md-auto col-form-label" style="color: #663300"><b>Nombre:</b></label>
-                                        <div class="col-md">
-                                            <input class="form-control" id="nombre" style="background-color: #cccccc;" value="María">
+                            <div class="row h-100">
+                                <div class="col-6 my-auto">
+                                    <div class="mb-2 p-1" style="background-color:#994c00; color: white; text-align: center; border-radius: 2px;">Marca</div>
+                                        <div class="col">
+                                            <input class="form-control mb-5" id="marca" placeholder="Añadir marca...">
                                         </div>
-                                    </div>
-                                    <div class="form-group row m-1">
-                                        <label for="ID" class="col-md-auto col-form-label" style="color: #663300"><b>Número Id:</b></label>
-                                        <div class="col-md">
-                                            <input class="form-control" id="ID" style="background-color: #e6e6e6;" value="XC2">
+                                    <div class="mb-2 p-1" style="background-color:#994c00; color: white; text-align: center; border-radius: 2px;">Nombre pienso</div>
+                                    <div class="col">
+                                            <input class="form-control mb-2" id="marca" placeholder="Añadir nombre...">
                                         </div>
-                                    </div>
-                                    <div class="form-group row m-1">
-                                        <label for="nombre" class="col-sm-auto col-form-label" style="color: #663300"><b>Estado:</b></label>
-                                        <div class="col-md">
-                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" style="background-color: #cccccc">
-                                                <option selected>Adulto</option>
-                                                <option value="1">Gestante</option>
-                                                <option value="2">Lactante</option>
-                                                <option value="3">Joven</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row m-1">
-                                        <label for="nombre" class="col-sm-auto col-form-label" style="color: #663300"><b>Salud:</b></label>
-                                        <div class="col-md">
-                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" style="background-color: #e6e6e6">
-                                                <option selected>Sana</option>
-                                                <option value="1">Enferma</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row m-1">
-                                        <label for="nombre" class="col-sm-auto col-form-label" style="color: #663300"><b>Fecha de Nacimiento:</b></label>
-                                        <div class="col-md">
-                                            <input class="form-control" id="nombre" style="background-color: #cccccc;" value="2000-02-22" type="date">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row m-1">
-                                        <label for="nombre" class="col-sm-auto col-form-label" style="color: #663300"><b>Sexo:</b></label>
-                                        <div class="col-md">
-                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" style="background-color: #e6e6e6">
-                                                <option selected>Hembra</option>
-                                                <option value="1">Macho</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row m-1">
-                                        <label for="nombre" class="col-sm-auto col-form-label" style="color: #663300"><b>Raza:</b></label>
-                                        <div class="col-md">
-                                            <input class="form-control" id="nombre" style="background-color: #cccccc;" value="SC">
-                                        </div>
+                                </div>
+                                <div class="col-6 my-auto">
+                                    <div class="mb-2 p-1" style="background-color:#994c00; color: white; text-align: center; border-radius: 2px;">Estado</div>
+                                    <div class="list-group">
+                                        <input type="checkbox" name="CheckBoxInputName" value="Value1" id="CheckBox5" checked />
+                                        <label class="list-group-item list-group-item-action m-0" for="CheckBox5">Joven</label>
+                                        <input type="checkbox" name="CheckBoxInputName" value="Value2" id="CheckBox6" />
+                                        <label class="list-group-item list-group-item-action m-0" for="CheckBox6">Adulto</label>
+                                        <input type="checkbox" name="CheckBoxInputName" value="Value3" id="CheckBox7" />
+                                        <label class="list-group-item m-0" for="CheckBox7">Enfermo</label>
+                                        <input type="checkbox" name="CheckBoxInputName" value="Value4" id="CheckBox8" />
+                                        <label class="list-group-item" for="CheckBox8">Gestante</label>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                     <div class="container">
@@ -120,7 +102,7 @@
                                     <figcaption>Aceptar</figcaption>
                                 </figure>
                             </a>
-                            <a class="col-3 text-center" href="oveja-maria.html">
+                            <a class="col-3 text-center" href="listaovejas-sinmaria.html">
                                 <figure class="boton">
                                     <img src="imagenes/cerrar.svg" style="width:50px;">
                                     <figcaption>Rechazar</figcaption>

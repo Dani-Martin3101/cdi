@@ -133,3 +133,50 @@ caption{
     background-color: #663300;
     color:white;
 }
+
+.zoom-100{
+    zoom:1;
+    overflow: hidden;
+}
+.zoom-125{
+    zoom:1.25;
+    overflow: hidden;
+}
+.zoom-150{
+    zoom:1.5;
+    overflow: hidden;
+}
+.zoom-175{
+    zoom:1.75;
+    overflow: hidden;
+}
+.list-group-item.active {
+background-color: #994c00;
+border-color: #994c00; }
+.list-group-item {
+  user-select: none;
+}
+
+.list-group input[type="checkbox"] {
+  display: none;
+}
+
+.list-group input[type="checkbox"] + .list-group-item {
+  cursor: pointer;
+}
+
+.list-group input[type="checkbox"] + .list-group-item:before {
+  content: "\2713";
+  color: transparent;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.list-group input[type="checkbox"]:checked + .list-group-item {
+  background-color: #994c00;
+  color: #FFF;
+}
+
+.list-group input[type="checkbox"]:checked + .list-group-item:before {
+  color: inherit;
+}
