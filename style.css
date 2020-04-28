@@ -13,6 +13,7 @@ body {
 }
 .boton{
     transition: all .2s ease-in-out;
+    border-radius: 20px;
 }
 .boton:hover
 {
@@ -130,7 +131,7 @@ table {
     border-collapse: collapse;
 }
 caption{
-    background-color: #663300;
+    background-color: #994c00;
     color:white;
 }
 
